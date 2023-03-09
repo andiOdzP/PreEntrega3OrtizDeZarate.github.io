@@ -1,0 +1,13 @@
+.encabezado-info{
+    border-bottom: 1px solid map-get($map: $paleta-colores, $key: secundario);;
+    border-top: 1px solid map-get($map: $paleta-colores, $key: secundario);;
+}
+
+.borde_bottom-negro {
+    border-bottom:  1px solid map-get($map: $paleta-colores, $key: secundario);;
+}
+
+
+.subtitulo{
+    max-width: $subtitulo__ancho;
+}

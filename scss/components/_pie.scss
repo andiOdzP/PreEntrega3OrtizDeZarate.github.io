@@ -1,0 +1,4 @@
+.pie{
+    @include bordes ($right:none, $bottom:none, $left:none);
+    background-color: map-get($map: $paleta-colores, $key: principal);
+}

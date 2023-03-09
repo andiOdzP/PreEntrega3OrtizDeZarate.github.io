@@ -1,0 +1,86 @@
+/*==========BOTON NAVBAR=========*/
+.navbar__btn{
+    display: inline;
+    @include bgFontColor();
+    text-decoration: none;
+}
+
+.navbar__btn:hover{
+    color:map-get($map: $paleta-colores, $key: secundario);
+}
+
+
+.cta {
+    border: none;
+    background: none;
+
+    span {
+        @include Botonespadding(0px, 15px, 0px, 7px);
+        //padding-bottom: 7px;
+        letter-spacing: 4px;
+        font-size: 14px;
+        //padding-right: 15px;
+        text-transform: uppercase;
+    }
+
+    
+    svg {
+        transform: translateX(-8px);
+        transition: all 0.3s ease;
+
+    }
+
+    &:hover svg {
+        transform: translateX(0);
+    }
+    &:active svg {
+        transform: scale(0.9);
+    }
+    
+    &:hover .hover-underline-animation:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.hover-underline-animation {
+    position: relative;
+    @include bgFontColor();
+    padding-bottom: 20px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        @include bgFontColor(black);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+}
+
+
+
+
+/*===============================*/
+
+
+.btn-dark-comentario{
+    @extend .btn-dark;
+    @include Botonespadding(2rem, 2rem, 1rem, 1rem);
+    background-color: map-get($map: $paleta-colores, $key: segundo)
+}
+
+.btn-dark-enviar{
+    @extend .btn-dark;
+    background-color: map-get($map: $paleta-colores, $key: secundario );
+    @include Botonespadding(2rem, 2rem);
+    font-size: 1.25rem;
+}
+
+
+
+

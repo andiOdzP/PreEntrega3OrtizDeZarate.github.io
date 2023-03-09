@@ -1,0 +1,24 @@
+
+ //TITULO
+.carta_titulo{
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5;
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    text-decoration: none;
+    line-height: 0rem;
+    @include bgFontColor();
+
+    &:hover{
+        @include bgFontColor();
+    }
+}
+
+.noticias__img{
+    padding: 0px;
+    @include bordes ($right:none);
+}
+
+.noticias__p{
+    padding: 1rem;
+}

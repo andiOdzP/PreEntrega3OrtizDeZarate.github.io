@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: map-get($map: $paleta-colores, $key: principal);
+    height: 100vh;
+}
+
+:root {
+    --bs-font-sans-serif: 'Space Grotesk', sans-serif;
+}
+
+@for $i from 1 through 10 {
+	.sectionMarginTop-#{$i}{
+	margin-top: 10px * $i;
+	}
+}
+
+
+
+@mixin Botonespadding($left, $right, $top: .5rem, $bottom: .5rem) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin bgFontColor ($bg: map-get($map: $paleta-colores, $key: principal), $color: map-get($map: $paleta-colores, $key: secundario)){
+    background-color: $bg;
+    color: $color;
+}
+
+@mixin bordes ($top: solid black 1px, $right:  solid black 1px , $bottom:  solid black 1px, $left:  solid black 1px){
+    border-top:  $top;
+    border-right: $right;
+    border-bottom: $bottom;
+    border-left: $left;
+}
+
+
+//==================================================
+
+
+
+@media (min-width: 1200px) {
+
+    /*IMAGEN DINO HEADER*/
+    .img-fluid {
+        max-width: 200%;
+        height: auto;
+    }
+
+    .formulario{
+        max-width: 800px !important;
+    }
+}
+

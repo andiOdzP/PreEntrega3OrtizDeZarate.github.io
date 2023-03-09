@@ -1,0 +1,12 @@
+.formulario-info {
+    min-height: 300px;
+}
+
+.formaulario__color{
+    background-color: map-get($map: $paleta-colores, $key: cuarto);
+    color: #ffffff;
+}
+
+::placeholder {
+    color: map-get($map: $paleta-colores, $key: tercero);;
+}

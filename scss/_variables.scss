@@ -1,0 +1,26 @@
+$paleta-colores: (
+    principal: #f6f6f6,
+    secundario: black,
+    tercero:rgb(255, 255, 255),
+    cuarto: #8b8b8b
+);
+
+$subtitulo__ancho: 600px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+
+/////////////////////////////////////////////////////////////
+//==================VARIABLES BOOTSTRAP=====================
+////////////////////////////////////////////////////////////
+
+//CARD
+$card-color: map-get($map: $paleta-colores, $key: secundario);
+$card-border-radius: 0px;
+$card-border-width: 1px;
+$card-border-color: map-get($map: $paleta-colores, $key: secundario);
+$white:map-get($map: $paleta-colores, $key: principal);
+
+
+//botton
+$btn-border-radius: 0px;
